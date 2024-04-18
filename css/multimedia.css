@@ -1,0 +1,33 @@
+.container{
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+
+}
+.video{
+	height: 100vh;
+	object-fit: cover;
+}
+.content{
+	width: 75%;
+	margin: 0 auto;
+}
+.content p {
+	letter-spacing: 1px;
+}
+@media screen and (min-width:720px){
+	.vid-container{
+		height: 100%;
+	}
+	.container{
+		grid-template-columns: 1fr 1fr;
+		height: 80vh;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.video{
+		object-fit: cover;
+		height: 100%;
+		width: 100%	;
+	}
+}

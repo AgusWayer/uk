@@ -1,0 +1,91 @@
+.container-card{
+    display: grid;   
+    gap: 1rem;
+    width: 100%;
+    grid-template-columns: 1fr;
+}
+.product{
+    width: auto;
+    padding: 1rem;
+}
+.product .card{
+    position: relative;
+    width: auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+    padding: 0 !important;
+    border-radius: 10px  ;
+}
+.card-img-top{
+    height: 15rem;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+}
+.card-content{
+    padding: 1rem 1rem;
+}
+
+.hero .content{
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    bottom: 24%;
+}
+.hero .content .text{
+    position: absolute;
+    background-color: rgba(37, 150, 190,.9);
+    padding: 1rem;
+    left: 0;
+    margin: 1rem;
+}
+.hero .content .text p{
+    width: 100%;
+    letter-spacing: 1px;
+}
+.hero .image img{
+    object-fit: cover;
+}
+h1{
+    margin: 0;
+}
+.hero{
+    display: grid;
+    height: 50vh;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+}
+@media screen and (min-width:720px){
+    .container-card{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .hero{
+        grid-template-columns: 2fr 1fr;
+        padding: 1rem 3rem;
+        width: 75%;
+        margin: 0 auto;
+    }
+    .hero .content .text{
+        position: absolute;
+        width: 40%;
+        right: 0 !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        left: auto;
+        height: 50%;
+        background-color: rgba(37, 150, 190,.7);
+        padding: 2rem 3rem;
+    }
+    .hero .content{
+        position: static;
+    }
+    .hero{
+        height: 80vh;
+    }
+    .hero .content .text p{
+        width: 75%;
+    }
+}

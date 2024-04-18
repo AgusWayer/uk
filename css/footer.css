@@ -1,0 +1,31 @@
+.footer{
+    padding: 1rem;
+    color: black;
+    text-align: center;
+    display: grid;
+    background-color: whitesmoke;
+    grid-template-columns: 1fr;
+}
+.footer-link{
+      font-size: 1.3rem;
+}
+.footer-sosmed img{
+    width: 2rem;
+}
+.footer-nav{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+@media screen and (min-width:720px){
+    .footer{
+         grid-template-columns: 1fr 1fr 1fr;
+         gap: 1rem;
+         text-align: left;
+    }
+    .footer-nav{
+        justify-content: left;
+    }
+}

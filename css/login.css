@@ -1,0 +1,87 @@
+.body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.container{
+	justify-content: center;
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 80%;
+	height: fit-content;
+}
+.image img{
+	width: 80%;
+}
+.card{
+	height: fit-content;
+	width: fit-content;
+	border-radius: 10px;
+	padding: 1rem;
+	box-shadow: 0px 0px 7px rgba(0,0,0,.2);
+}
+.login-text{
+	font-size: 2rem;
+}
+.login-btn{
+	font-size: 1.2rem;
+}
+
+.alert-message.active{
+	position: relative;
+	top: 0;
+	margin-top: 1rem;
+	border-radius: 10px;
+	width: fit-content;
+	height: fit-content;
+	padding: 1rem 3rem;
+	background-color: rgba(255, 89, 89,.5);
+
+}
+
+.alert-message{
+	top: -999px;
+	position: absolute;
+	margin-top: 0;
+	transition: .4s;
+}
+.alert-message .close{
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0;
+	margin: .5rem .4rem;
+}
+.alert-message .close button{
+	margin: 0;
+	font-size: 1.2rem;
+}
+.cancel-btn{
+	background-color: transparent;
+	font-size: 1.2rem;
+	color: #0367aa;
+	border: 1px solid #0367aa;
+}
+@media screen and (min-width: 720px){
+	.container{
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+	}
+	.card{
+		padding: 2rem 4rem;
+	}
+	.alert-message.active{
+		position: absolute;
+	}
+	.form-control{
+		width: 90%;
+	}
+	.card{
+		width: 80%;
+	}
+	.image img{
+		width: 80%;
+	}
+}
